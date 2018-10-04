@@ -11,11 +11,11 @@ def batch_badge_creator(name_list)
 end
 
 def assign_rooms(name_list)
-  welcome_message = []
+  welcome = []
   name_list.each_with_index do |name,index|
-    welcome_message << "Hello, #{name}! You'll be assigned to room #{index+1}!"
+    welcome << "Hello, #{name}! You'll be assigned to room #{index+1}!"
   end
-  welcome_message
+  welcome
 end
 
 def printer(attendees)
